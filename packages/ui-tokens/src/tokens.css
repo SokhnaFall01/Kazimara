@@ -1,0 +1,39 @@
+/* Charte Kazimara — variables CSS (web). Généré à la main depuis index.ts ; garder synchronisé. */
+:root {
+  --kz-vert-baobab: #1F5C45;
+  --kz-terre-cuite: #D2662B;
+  --kz-or-soleil: #F2B33D;
+  --kz-encre: #10201A;
+  --kz-creme: #F6F2EA;
+  --kz-papier: #FFFDF8;
+
+  --kz-fond: var(--kz-creme);
+  --kz-surface: var(--kz-papier);
+  --kz-texte: var(--kz-encre);
+  --kz-texte-secondaire: #5B6660;
+  --kz-primaire: var(--kz-vert-baobab);
+  --kz-accent: var(--kz-terre-cuite);
+  --kz-mise-en-avant: var(--kz-or-soleil);
+  --kz-bordure: #E6DFD2;
+
+  --kz-police: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --kz-fond: var(--kz-encre);
+    --kz-surface: #1A2E26;
+    --kz-texte: var(--kz-creme);
+    --kz-texte-secondaire: #A9B5AE;
+    --kz-primaire: #3E8C6C;
+    --kz-bordure: #2B4238;
+  }
+}
+:root[data-theme="dark"] {
+  --kz-fond: var(--kz-encre);
+  --kz-surface: #1A2E26;
+  --kz-texte: var(--kz-creme);
+  --kz-texte-secondaire: #A9B5AE;
+  --kz-primaire: #3E8C6C;
+  --kz-bordure: #2B4238;
+}

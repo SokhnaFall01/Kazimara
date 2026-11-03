@@ -1,0 +1,37 @@
+{
+  "app": { "nom": "Kazimara", "slogan": "Solid work" },
+  "auth": {
+    "telephone": "Phone number",
+    "recevoirCode": "Get the code",
+    "codeEnvoye": "Code sent to {telephone}",
+    "choisirPin": "Choose a 4-digit PIN",
+    "activerEmpreinte": "Unlock with fingerprint or Face ID"
+  },
+  "ventes": {
+    "nouvelle": "New sale",
+    "totalHt": "Subtotal (excl. VAT)",
+    "tva": "VAT {taux}%",
+    "totalTtc": "Total (incl. VAT)",
+    "dejaPaye": "Already paid",
+    "resteAPayer": "Balance due",
+    "enAttenteSync": "Waiting to sync"
+  },
+  "statutPaiement": { "non_payee": "Unpaid", "payee_en_partie": "Partially paid", "payee": "Paid" },
+  "methodePaiement": { "especes": "Cash", "wave": "Wave", "orange_money": "Orange Money", "free_money": "Free Money", "carte": "Card" },
+  "tableauDeBord": { "ventesDuJour": "Today's sales", "ventesDuMois": "This month's sales", "encaisse": "Collected", "resteAEncaisser": "Outstanding", "stockBas": "Low stock" },
+  "erreurs": {
+    "VALIDATION": "Some information is incorrect.",
+    "NON_AUTHENTIFIE": "Your session has expired. Please sign in again.",
+    "INTERDIT": "You don't have access to this action.",
+    "INTROUVABLE": "Item not found.",
+    "CONFLIT_VERSION": "This record was changed elsewhere. Please reload it.",
+    "STOCK_INSUFFISANT": "Not enough stock.",
+    "PLAGE_EPUISEE": "No offline invoice numbers left. Please connect to the network.",
+    "OTP_INVALIDE": "Incorrect code.",
+    "OTP_TROP_DE_DEMANDES": "Too many codes requested. Try again in an hour.",
+    "TELEPHONE_INVALIDE": "Enter a valid Senegalese number.",
+    "PAIEMENT_REFUSE": "The payment was declined.",
+    "TROP_DE_REQUETES": "Too many requests. Please wait a moment.",
+    "ERREUR_INTERNE": "Something went wrong. Please try again."
+  }
+}

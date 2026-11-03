@@ -1,0 +1,37 @@
+{
+  "app": { "nom": "Kazimara", "slogan": "Le travail solide" },
+  "auth": {
+    "telephone": "Numéro de téléphone",
+    "recevoirCode": "Recevoir le code",
+    "codeEnvoye": "Code envoyé au {telephone}",
+    "choisirPin": "Choisissez un code PIN à 4 chiffres",
+    "activerEmpreinte": "Déverrouiller avec l'empreinte ou Face ID"
+  },
+  "ventes": {
+    "nouvelle": "Nouvelle vente",
+    "totalHt": "Total HT",
+    "tva": "TVA {taux} %",
+    "totalTtc": "Total TTC",
+    "dejaPaye": "Déjà payé",
+    "resteAPayer": "Reste à payer",
+    "enAttenteSync": "En attente de synchronisation"
+  },
+  "statutPaiement": { "non_payee": "Non payée", "payee_en_partie": "Payée en partie", "payee": "Payée" },
+  "methodePaiement": { "especes": "Espèces", "wave": "Wave", "orange_money": "Orange Money", "free_money": "Free Money", "carte": "Carte" },
+  "tableauDeBord": { "ventesDuJour": "Ventes du jour", "ventesDuMois": "Ventes du mois", "encaisse": "Encaissé", "resteAEncaisser": "Reste à encaisser", "stockBas": "Stock bas" },
+  "erreurs": {
+    "VALIDATION": "Certaines informations sont incorrectes.",
+    "NON_AUTHENTIFIE": "Votre session a expiré. Reconnectez-vous.",
+    "INTERDIT": "Vous n'avez pas accès à cette action.",
+    "INTROUVABLE": "Élément introuvable.",
+    "CONFLIT_VERSION": "Cette fiche a été modifiée ailleurs. Rechargez-la.",
+    "STOCK_INSUFFISANT": "Stock insuffisant.",
+    "PLAGE_EPUISEE": "Plus de numéros de facture disponibles hors-ligne. Connectez-vous au réseau.",
+    "OTP_INVALIDE": "Code incorrect.",
+    "OTP_TROP_DE_DEMANDES": "Trop de codes demandés. Réessayez dans une heure.",
+    "TELEPHONE_INVALIDE": "Entrez un numéro sénégalais valide.",
+    "PAIEMENT_REFUSE": "Le paiement a été refusé.",
+    "TROP_DE_REQUETES": "Trop de demandes. Patientez un instant.",
+    "ERREUR_INTERNE": "Une erreur est survenue. Réessayez."
+  }
+}

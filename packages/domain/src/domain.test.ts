@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   analyserNumeroFacture, arrondirFcfa, calculerTotaux, doitRenouvelerPlage, etatPaiement,
   formaterFcfa, formaterNumeroFacture, livreDeCaisse, normaliserTelephoneSn, soldeArdoise, tirerNumero,
-} from "./index.js";
+} from "./index";
 
 describe("argent", () => {
   it("arrondit au franc, y compris les avoirs", () => {

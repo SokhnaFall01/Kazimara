@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "@kazimara/ui-tokens/tokens.css";
+
+@theme inline {
+  --color-fond: var(--kz-fond);
+  --color-surface: var(--kz-surface);
+  --color-texte: var(--kz-texte);
+  --color-texte-2: var(--kz-texte-secondaire);
+  --color-primaire: var(--kz-primaire);
+  --color-accent: var(--kz-accent);
+  --color-or: var(--kz-mise-en-avant);
+  --color-bordure: var(--kz-bordure);
+  --color-baobab: var(--kz-vert-baobab);
+  --color-encre: var(--kz-encre);
+  --color-creme: var(--kz-creme);
+  --font-sans: var(--kz-police);
+}
+
+html { color-scheme: light dark; }
+body { background: var(--kz-fond); color: var(--kz-texte); font-family: var(--kz-police); }
+:focus-visible { outline: 2px solid var(--kz-mise-en-avant); outline-offset: 2px; }

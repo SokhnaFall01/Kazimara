@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dictionnaires, t } from "./index.js";
+import { dictionnaires, t } from "./index";
 
 function cles(o: object, p = ""): string[] {
   return Object.entries(o).flatMap(([k, v]) => (typeof v === "string" ? [p + k] : cles(v, `${p}${k}.`)));

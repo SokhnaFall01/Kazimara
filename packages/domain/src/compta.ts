@@ -1,5 +1,5 @@
-import type { Fcfa } from "./money.js";
-import type { MethodePaiement, StatutPaiement } from "./paiement.js";
+import type { Fcfa } from "./money";
+import type { MethodePaiement, StatutPaiement } from "./paiement";
 
 /**
  * Le livre de caisse n'est pas une table saisie : il est calculé à partir des paiements

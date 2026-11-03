@@ -1,4 +1,4 @@
-import { assertFcfa, type Fcfa } from "./money.js";
+import { assertFcfa, type Fcfa } from "./money";
 
 export const METHODES_PAIEMENT = ["especes", "wave", "orange_money", "free_money", "carte"] as const;
 export type MethodePaiement = (typeof METHODES_PAIEMENT)[number];

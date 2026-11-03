@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { demanderOtp, lotSync, venteEntree } from "./index.js";
+import { demanderOtp, lotSync, venteEntree } from "./index";
 
 const id = "0192f4b0-7c3a-7a11-9b2e-3f1c2d4e5a6b";
 

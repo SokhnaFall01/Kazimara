@@ -1,4 +1,4 @@
-import { arrondirFcfa, assertFcfa, type Fcfa } from "./money.js";
+import { arrondirFcfa, assertFcfa, type Fcfa } from "./money";
 
 /** Taux de TVA au Sénégal, en pourcentage entier. */
 export const TAUX_TVA_NORMAL = 18;

@@ -16,7 +16,7 @@ Monorepo TypeScript (pnpm + Turborepo). Une règle de calcul est écrite une foi
 ```
 apps/
   mobile/       React Native + Expo (iOS, Android)        — à générer (sprint 1)
-  web/          Next.js : page d'accueil + app web        — à générer (sprint 8)
+  web/          Next.js : page d'accueil + app web        — en cours (API simulée)
   api/          NestJS : API, webhooks, workers           — à générer (sprint 1)
 packages/
   domain/       règles métier pures : TVA, totaux, statuts de paiement, ardoise,
@@ -43,6 +43,18 @@ pnpm install
 ```bash
 pnpm typecheck && pnpm test
 ```
+
+```bash
+pnpm --filter @kazimara/web dev
+```
+
+L'app web tourne sur http://localhost:3000 avec une **API simulée** dans le navigateur
+(aucun serveur nécessaire, aucun SMS envoyé : le code de connexion de développement est `123456`).
+Chaque écran passe par l'interface `KazimaraApi` (`apps/web/src/lib/api/client.ts`), qui reprend les routes
+de l'architecture §11. Quand un module de l'API NestJS est prêt (SMS, PayDunya, WhatsApp…), on le branche
+sans toucher aux écrans.
+
+Pour les services de l'API (à venir) :
 
 ```bash
 cp .env.example .env && pnpm dev:infra

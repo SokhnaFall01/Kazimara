@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Kazimara">
+  <!-- Le pilier : « imara », la solidité — chevrons bogolan qui montent -->
+  <rect x="10" y="22" width="22" height="88" rx="4" fill="#1F5C45"/>
+  <g fill="none" stroke="#FFFDF8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 42 l6 -6 l6 6"/>
+    <path d="M15 54 l6 -6 l6 6"/>
+    <path d="M15 66 l6 -6 l6 6"/>
+  </g>
+  <!-- Les briques : « kazi », le travail -->
+  <rect x="38" y="56" width="18" height="18" rx="3" fill="#D2662B"/>
+  <rect x="62" y="34" width="18" height="18" rx="3" fill="#D2662B"/>
+  <!-- Le soleil : la réussite -->
+  <circle cx="94" cy="20" r="9" fill="#F2B33D"/>
+  <!-- L'élan : aller de l'avant -->
+  <path d="M38 80 H60 L94 110 H72 Z" fill="#F2B33D"/>
+</svg>

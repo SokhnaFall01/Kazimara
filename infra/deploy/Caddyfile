@@ -1,0 +1,26 @@
+# Le domaine vient de la variable DOMAIN (infra/deploy/.env). Rien d'autre à modifier ici.
+{
+	email {$ACME_EMAIL}
+}
+
+# Site principal : page d'accueil + app web
+{$DOMAIN} {
+	encode zstd gzip
+	header Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	reverse_proxy web:3000
+}
+
+# www → domaine principal
+www.{$DOMAIN} {
+	redir https://{$DOMAIN}{uri} permanent
+}
+
+# À activer quand l'API NestJS sera déployée (enlever les « # ») :
+# api.{$DOMAIN} {
+# 	reverse_proxy api:4000
+# }
+#
+# Page de vérification des factures par QR code (architecture §9) :
+# verifier.{$DOMAIN} {
+# 	reverse_proxy web:3000
+# }

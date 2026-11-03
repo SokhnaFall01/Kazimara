@@ -1,0 +1,31 @@
+# Production : app web derrière Caddy, qui obtient et renouvelle seul le certificat HTTPS.
+# Le domaine se règle une seule fois, dans infra/deploy/.env (variable DOMAIN).
+name: kazimara
+
+services:
+  web:
+    build:
+      context: ../..
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_API_MODE: ${API_MODE:-mock}
+        NEXT_PUBLIC_API_URL: https://api.${DOMAIN}/api/v1
+    restart: unless-stopped
+    expose: ["3000"]
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on: [web]
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment:
+      DOMAIN: ${DOMAIN:?Renseignez DOMAIN dans infra/deploy/.env}
+      ACME_EMAIL: ${ACME_EMAIL:?Renseignez ACME_EMAIL dans infra/deploy/.env}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
